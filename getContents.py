@@ -205,7 +205,8 @@ parser.add_argument("-x", "--developers", action="store_true", default=False, he
 
 args = parser.parse_args()
 
-apiUri = 'https://community.blackboard.com/api/core/v3/'
+jiveFQDN = 'mycommunity.jiveon.com'
+apiUri = 'https://' + jiveFQDN + '/api/core/v3/'
 
 endpoint = apiUri + 'content'
 queryParamCount = 0
